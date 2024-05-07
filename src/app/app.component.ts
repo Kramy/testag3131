@@ -17,7 +17,12 @@ export class AppComponent {
       floatingFilter: true
     },
     columnDefs: [
-      { field: "athlete", rowGroup: true, filter: ColumnFilterComponent },
+      {
+        field: "athlete",
+        rowGroup: true,
+        filter: ColumnFilterComponent,
+        // filter: "agTextColumnFilter"
+       },
       { field: "year" },
       { field: "country" },
       { field: "sport" },
